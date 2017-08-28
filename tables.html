@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- style a la mala -->
+        <style>
+            table {
+                margin: 12px;
+            }
+
+            td, th {
+                border: 1px solid #000;
+                text-align: center;
+            }
+
+            #schedule {
+                width: 500px;
+            }
+
+            #table-multiply td {
+              font-size: 3em;
+              padding: 4px 12px;
+              width: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container text-center">
+            <table id="table-multiply">
+                <tr>
+                    <td>x</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>16</td>
+                </tr>
+            </table>
+
+            <table id="schedule">
+                <tr>
+                    <td>Hora</td>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+                <tr>
+                    <td>7am</td>
+                    <td colspan="5">Estructuras de archivos</td>
+                </tr>
+                <tr>
+                    <td>8am</td>
+                    <td colspan="5">Estructuras de archivos</td>
+                </tr>
+                <tr>
+                    <td>9am</td>
+                    <td colspan="5">LIBRE</td>
+                </tr>
+                <tr>
+                    <td>10am</td>
+                    <td colspan="5">Compiladores A</td>
+                </tr>
+                <tr>
+                    <td>11am</td>
+                    <td colspan="5">Teconologías web</td>
+                </tr>
+                <tr>
+                    <td>12am</td>
+                    <td colspan="5">Robótica</td>
+                </tr>
+                <tr>
+                    <td>1pm</td>
+                    <td></td>
+                    <td>Seminario</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6pm</td>
+                    <td colspan="5">Ingeniería de SW B</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
