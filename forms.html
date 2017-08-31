@@ -24,24 +24,54 @@
                     <form action="https://tecweb-acominf.c9users.io/envio.php" method="POST">
                         <fieldset>
                             <legend>Datos personales</legend>
-                            Nombre: <input class="form-control" name="name" type="text">
+                            <label for="name">Nombre:</label>
+                            <input id="name" class="form-control" name="name" type="text" placeholder="Nombre y apellidos">
+                            
+                            <label for="password">Contraseña:</label>
+                            <input id="password" class="form-control" password="password" type="password" placeholder="8 caracteres minimo" required>
                             Edad: <input class="form-control" name="age" type="number">
-                            Contraseña: <input class="form-control" name="password" type="password">
+                            Foto perfil: <input name="profile" type="file">
+                            Fecha de nacimiento: <input name="date" type="date">
+                            
+                            <p>
+                                Ciudad:
+                                <select name="city">
+                                    <option value="slp">San Luis Potosí</option>
+                                    <option value="mty">Monterrey</option>
+                                    <option value="cdmx">Ciudad de México</option>
+                                </select>
+                            </p>
+                            <p>
+                                Materias favoritas:
+                                <select name="course[]" multiple>
+                                    <option>Introducción a la programación</option>
+                                    <option>Introducción a los circuitos lógicos</option>
+                                    <option>Cálculo A</option>
+                                    <option>Cálculo C</option>
+                                    <option>Cálculo D</option>
+                                    <option>Grafos</option>
+                                </select>
+                            </p>
+                            <p>
+                                Comentarios
+                                <textarea name="comments" placeholder="¿Que te pareció el formulario?" cols="48" rows="4"></textarea>
+                            </p>
                         </fieldset>
                         <fieldset>
                             <legend>Preferencias</legend>
                             Sistemas operativos:
                             <div class="checkbox">
-                                <label><input type="checkbox" name="so" value="windows">Windows </label>
-                                <label><input type="checkbox" name="so" value="linux">Linux </label>
-                                <label><input type="checkbox" name="so" value="osx">Mac OSX </label>
+                                <label><input type="checkbox" name="so[]" value="windows">Windows </label>
+                                <label><input type="checkbox" name="so[]" value="linux">Linux </label>
+                                <label><input type="checkbox" name="so[]" value="osx">Mac OSX </label>
                             </div>
                             Teléfono
                             <div class="radio-inline"> <label><input type="radio" name="tel" value="android">Android</label> </div>
                             <div class="radio-inline"> <label><input type="radio" name="tel" value="ios">iOS</label> </div>
                         </fieldset>
                         <!--button>Registrar</button-->
-                        <input class="btn btn-primary" type="submit" value="Registrar">
+                        <input class="btn btn-secondary" type="reset" value="Limpiar">
+                        <input class="btn btn-success" type="submit" value="Registrar">
                     </form>
                 </div>
             </div>
