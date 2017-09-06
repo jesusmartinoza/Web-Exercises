@@ -1,0 +1,16 @@
+/* Universal selector */
+* {
+    font-family: Arial;
+}
+
+/* Class selector */
+.sub-header {
+    color: #e74c3c;
+}
+
+/* Id selector */
+#intro {
+    font-style: italic;
+    font-weight: 600;
+    text-align: justify;
+}
