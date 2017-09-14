@@ -1,0 +1,29 @@
+aside {
+    background-color: #DDCEB3;
+}
+footer, header {
+    background-color: #4D6370;
+    color: white;
+}
+
+header {
+    height: 80px;
+    padding-left: 1em;
+}
+
+footer {
+    height: 60px;
+}
+
+.sub-header {
+    border-bottom: 1px solid #aaa;
+}
+
+#copyright:before{
+    content: "©";
+    margin-right: 4px;
+}
+
+#copyright {
+    padding: 20px 0;
+}
