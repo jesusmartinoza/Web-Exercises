@@ -10,6 +10,7 @@ body {
 .article h2 {
     border-bottom: 1px solid #e74c3c;
     color: #e74c3c;
+    margin: 12px 0;
 }
 
 .article time {

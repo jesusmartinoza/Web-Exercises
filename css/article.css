@@ -6,6 +6,7 @@
     background-color: #000;
     height: 360px;
     overflow: hidden;
+    padding: 0;
     position: relative;
 }
 
@@ -36,4 +37,12 @@
 .article-content {
     column-count: 2;
     padding: 1em;
+}
+
+.example-content {
+    padding: 1em;
+}
+
+.example-content table th {
+    width: 120px;
 }
