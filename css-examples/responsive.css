@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    background-color: #00BAE2;
+}
+
+aside {
+    background-color: #96F200;
+}
+
+.contenedor {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.contenedor main {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    width: 70%;
+}
+
+.contenedor aside {
+    display: inline-block;
+    margin: -2px;
+    padding: 8px;
+    padding-left: 12px;
+    width: 30%;
+}
+
+@media (max-width: 600px) {
+    .contenedor main, .contenedor aside {
+        width: 100%;
+    }
+}
