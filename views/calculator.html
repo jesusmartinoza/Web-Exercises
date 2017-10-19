@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Calculadora de propinas</title>
+    </head>
+    <body>
+        <div>
+            <h1>Calculadora de propinas</h1>
+            <form action="">
+                <label>
+                    Total de la cuenta:
+                    <input id="total" name="total" type="text">
+                </label>
+                <label>
+                    Número de personas:
+                    <input id="personas" name="personas" type="text">
+                </label>
+                <label>
+                    Calidad del servicio:
+                    <select name="servicio" id="servicio">
+                        <option value="15">Excelente</option>
+                        <option value="10">Bueno</option>
+                        <option value="5">Malo</option>
+                    </select>
+                </label>
+                <input type="button" value="Calcular">
+                <div id="propina"></div>
+            </form>
+        </div>
+    </body>
+</html>
